@@ -12,6 +12,18 @@ A single-file web Sudoku game (`sudoku.html`) with no build system, dependencies
 - **Test changes:** Refresh the browser after editing
 - **Commit & push:** Use git + GitHub (`origin/master` on `github.com/Tokenekie/sudoku`)
 
+## Git Workflow
+
+After completing any meaningful unit of work, commit and push to GitHub. Don't batch unrelated changes into one commit.
+
+- Stage specific files rather than `git add .`
+- Write commit messages in the imperative mood with a concise subject line, followed by a blank line and a short body explaining *why* if it isn't obvious
+- Always push after committing: `git push`
+- Always include the co-author trailer:
+  ```
+  Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
+  ```
+
 ## Architecture
 
 Everything lives in `sudoku.html` — HTML structure, CSS, and JavaScript are all inline in one file. The JS is organized into clearly commented sections:
